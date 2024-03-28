@@ -75,14 +75,14 @@
             font-size: 1.5rem;
         }
 
-        .firstSection {
+        #firstSection {
             display: flex;
             justify-content: space-around;
             margin: 130px 0;
             align-items: center;
         }
 
-        .firstSection>div {
+        #firstSection>div {
             width: 30%;
         }
 
@@ -95,7 +95,12 @@
         .rightSection img {
             width: 80%;
             border-radius: 50%;
+            box-shadow: 0em 0 2.8em rgb(53, 22, 203);
+
             /* margin: 20px 0; */
+            
+            
+            transition: all 0.5s ease-in-out;
         }
 
         .purple {
@@ -106,7 +111,7 @@
             color: rgb(43, 235, 78);
         }
 
-        .firstSection .rightSection {
+        #firstSection .rightSection {
             display: flex;
             flex-direction: column;
         }
@@ -116,6 +121,8 @@
             padding: 3px 14px;
             background-color: #349da0;
             color: #821109;
+            box-shadow: 0em 0 2.8em rgb(21, 20, 24);
+
         }
 
 
@@ -128,13 +135,13 @@
             cursor: pointer;
         }
 
-        .secondSection {
+        #secondSection {
             max-width: 80vw;
             margin: auto;
             height: 25vh;
         }
 
-        .secondSection h1 {
+        #secondSection h1 {
             font-size: 1.9rem;
         }
 
@@ -142,19 +149,19 @@
             color: gray;
         }
 
-        .secondSection p {
+        #secondSection p {
             color: grey;
             font-size: 10px;
         }
 
-        .thirdSection h1 {
+        #thirdSection h1 {
             display: flex;
             text-align: center;
             justify-content: center;
             font-size: 34px;
         }
 
-        .thirdSection {
+        #thirdSection {
             height: 650px;
         }
 
@@ -168,6 +175,8 @@
             background-image: url(static/back1.jpg);
             /* background-repeat: no-repeat; */
             background-size: cover;
+            box-shadow: 0em 0 2em rgb(100, 100, 98);
+
         }
 
         .card h3 {
@@ -222,18 +231,18 @@
 
         }
 
-        .fourthSection {
+        #fourthSection {
             height: 250px;
         }
 
-        .fourthSection h1 {
+        #fourthSection h1 {
             display: flex;
             text-align: center;
             justify-content: center;
             font-size: 34px;
         }
 
-        .fourthSection .box {
+        #fourthSection .box {
             border: 1px solid;
             background: rgb(26, 212, 190);
             width: 80vw;
@@ -245,7 +254,7 @@
             left: -25px;
         }
 
-        .fourthSection .verticle {
+        #fourthSection .verticle {
             height: 50px;
             width: 1px;
             background-color: rgb(39, 209, 227);
@@ -279,12 +288,12 @@
             right: 12px;
         }
 
-        .fifthSection {
+        #fifthSection {
             height: 300px;
             justify-content: center;
         }
 
-        .fifthSection h1 {
+        #fifthSection h1 {
             font-size: 34px;
             text-align: center;
 
@@ -363,11 +372,11 @@
         }
 
         @media only screen and (min-width: 992px) and (max-width: 1305px) {
-            .firstSection .button button {
+            #firstSection .button button {
                 margin: 24px 4px;
             }
 
-            .secondSection {
+            #secondSection {
                 height: 30vh;
             }
 
@@ -385,15 +394,15 @@
                 padding-right: 279px;
             }
 
-            .fourthSection {
+            #fourthSection {
                 height: 215px;
             }
 
-            .fourthSection .verticle {
+            #fourthSection .verticle {
                 margin: 0 80px;
             }
 
-            .fourthSection .box {
+            #fourthSection .box {
                 margin: 90px;
                 width: 78vw;
                 top: -22px;
@@ -427,7 +436,7 @@
                 margin: 24px 49px;
             }
 
-            .firstSection {
+            #firstSection {
                 width: 109%;
                 margin: 73px 0;
             }
@@ -437,7 +446,7 @@
                 margin: 0;
             }
 
-            .secondSection {
+            #secondSection {
                 margin-left: 96px;
                 height: 26vh;
             }
@@ -446,19 +455,19 @@
                 font-size: 12px;
             }
 
-            .secondSection h1 {
+            #secondSection h1 {
                 font-size: 1.5rem;
             }
 
-            .secondSection li {
+            #secondSection li {
                 font-size: 14px;
             }
 
-            .secondSection p {
+            #secondSection p {
                 font-size: 8px;
             }
 
-            .thirdSection h1 {
+            #thirdSection h1 {
                 font-size: 26px;
             }
 
@@ -481,19 +490,19 @@
             }
 
 
-            .fourthSection {
+            #fourthSection {
                 height: 215px;
             }
 
-            .fourthSection h1 {
+            #fourthSection h1 {
                 font-size: 26px;
             }
 
-            .fourthSection .verticle {
+            #fourthSection .verticle {
                 margin: 0 50px;
             }
 
-            .fourthSection .box {
+            #fourthSection .box {
                 margin: 76px;
                 width: 66vw;
                 top: -3px;
@@ -511,7 +520,7 @@
                 right: 15px;
             }
 
-            .fifthSection h1 {
+            #fifthSection h1 {
                 font-size: 26px;
             }
 
@@ -542,7 +551,8 @@
                 flex-direction: column;
                 margin: 10px;
             }
-            nav ul li{
+
+            nav ul li {
                 margin: 5px 23px;
             }
 
@@ -555,13 +565,13 @@
                 right: -26px;
             }
 
-            .fourthSection .box {
+            #fourthSection .box {
                 margin: 58px;
                 top: 7px;
                 left: 37px;
             }
 
-            .fourthSection .verticle {
+            #fourthSection .verticle {
                 margin: 35px 40px;
                 height: 21px;
                 position: relative;
@@ -611,7 +621,7 @@
 
             }
 
-            .thirdSection h1 {
+            #thirdSection h1 {
                 font-size: 25px;
             }
 
@@ -619,19 +629,19 @@
                 font-size: 10px;
             }
 
-            .secondSection h1 {
+            #secondSection h1 {
                 font-size: 1.5rem;
             }
 
-            .secondSection li {
+            #secondSection li {
                 font-size: 15px;
             }
 
-            .secondSection p {
+            #secondSection p {
                 font-size: 8px;
             }
 
-            .secondSection {
+            #secondSection {
                 height: 45vh;
             }
 
@@ -646,29 +656,37 @@
             #css {
                 top: -44px;
             }
-            .fourthSection h1{
+
+            #fourthSection h1 {
                 font-size: 25px;
             }
-            .fifthSection{
+
+            #fifthSection {
                 height: 272px;
             }
-            .footer h2{
+
+            .footer h2 {
                 font-size: 15px;
             }
-            .fifthSection h1{
+
+            #fifthSection h1 {
                 font-size: 25px;
             }
-            .burger{
+
+            .burger {
                 display: block;
             }
-            .navbar{
-                height: 150px;
+
+            .navbar {
+                height: 160px;
             }
-            .h-nav-resp{
+
+            .h-nav-resp {
                 height: 50px;
             }
-            .v-class-resp{
-             opacity: 0;  
+
+            .v-class-resp {
+                opacity: 0;
             }
 
         }
@@ -679,15 +697,15 @@
     <header>
         <nav class="navbar h-nav-resp">
             <div class="left">
-                Pradeep's Portfolio
+                My Portfolio
             </div>
             <div class="right">
                 <ul class="nav-list v-class-resp">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#secondSection">About</a></li>
+                    <li><a href="#fourthSection">Skills</a></li>
+                    <li><a href="#thirdSection">Projects</a></li>
+                    <li><a href="#fifthSection">Contact Me</a></li>
                 </ul>
             </div>
             <div class="burger">
@@ -699,7 +717,7 @@
     </header>
 
     <main>
-        <section class="firstSection">
+        <section id="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Pradeep Timalsina</span>.
                 <div>I am a hardworking and passionate</div>
@@ -714,7 +732,7 @@
             </div>
         </section>
         <hr>
-        <section class="secondSection">
+        <section id="secondSection">
             <span class="textGrey">
                 What I have done so far.
             </span>
@@ -728,7 +746,7 @@
         </section>
 
         <hr>
-        <section class="thirdSection">
+        <section id="thirdSection">
             <h1>About Me</h1>
             <div class="card">
                 <h3>My Projects</h3>
@@ -767,7 +785,7 @@
             </div>
         </section>
         <hr>
-        <section class="fourthSection">
+        <section id="fourthSection">
             <h1>Skills</h1>
             <div class="box">
                 <div class="verticle">
@@ -806,7 +824,7 @@
             </div>
         </section>
         <hr>
-        <section class="fifthSection">
+        <section id="fifthSection">
             <h1>Contact Me</h1>
             <div class="contact">
                 <div class="contact1">
@@ -840,10 +858,10 @@
             strings: ['Web Developer', 'Data Engineer', '&amp; Web Designer.'],
             typeSpeed: 50,
         });
-        burger= document.querySelector('.burger');
-        navbar= document.querySelector('.navbar');        
-        navList= document.querySelector('.nav-list');        
-        burger.addEventListener('click', ()=>{
+        burger = document.querySelector('.burger');
+        navbar = document.querySelector('.navbar');
+        navList = document.querySelector('.nav-list');
+        burger.addEventListener('click', () => {
             // navbar.classList.toggle('v-class-resp');
             navList.classList.toggle('v-class-resp');
             navbar.classList.toggle('h-nav-resp');
